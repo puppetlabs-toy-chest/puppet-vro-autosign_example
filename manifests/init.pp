@@ -5,7 +5,7 @@ class autosign_example (String $puppet_autosign_shared_secret = 'S3cr3tP@ssw0rd!
     owner   => 'pe-puppet',
     group   => 'pe-puppet',
     mode    => '0700',
-    content => template('autosigner_example/autosign.rb.erb'),
+    content => template('autosign_example/autosign.rb.erb'),
     notify  => Service['pe-puppetserver'],
   }
 
